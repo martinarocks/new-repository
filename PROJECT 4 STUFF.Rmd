@@ -33,10 +33,20 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
  # Now, I will write a function that does something! 
  
+
 ```{r}
-awesomefunction <- function(data,col1,col2)  
-  awesomefunction = (data[, col1] + data[, col2])/2
-awesomefunction=terriblefunction
-     
+awesomecode <- c("i", "love", "r", "so", "so", "much")
+asterisk <- "***"
+
+highlight <- function(content, wrapper) {
+  answer <- c(wrapper, content, wrapper)
+  return(answer)
+}
 ```
+
+```{r}
+awesomecode(awesomecode, asterisk)
+```
+
+
 
